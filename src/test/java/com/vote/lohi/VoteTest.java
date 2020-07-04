@@ -29,11 +29,9 @@ public class VoteTest {
 
 		driver.get("http://mycutebaby.in/contest/participant/?n=5edd313ba9a6d&utm_source=wsapp_share_status&utm_campaign="
 				+ "June_2020&utm_medium=shared&utm_term=wsapp_shared_5edd313ba9a6d&utm_content=participant");
-		try {
-			driver.findElement(By.id("vote_btn")).click();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		
+		driver.findElement(By.id("vote_btn")).click();
+		
 //		try {
 //			WebElement fb_popup = driver.findElement(By.id("fb-close"));
 //			if(fb_popup.isDisplayed())
