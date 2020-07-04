@@ -34,19 +34,24 @@ public class VoteTest {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		WebElement fb_popup = driver.findElement(By.id("fb-close"));
-		if(fb_popup.isDisplayed())
-			fb_popup.click();
-//		WebElement x_button = driver.findElement(By.xpath("//button[@class='close' and contains(.,'×')]"));
-//		WebElement No_button = driver.findElement(By.xpath("//button[contains(.,'No')]"));
-//		if(No_button.isDisplayed())
-//			No_button.click();
-		
+		try {
+			WebElement fb_popup = driver.findElement(By.id("fb-close"));
+			if(fb_popup.isDisplayed())
+				fb_popup.click();
+			WebElement x_button = driver.findElement(By.xpath("//button[@class='close' and contains(.,'×')]"));
+			WebElement No_button = driver.findElement(By.xpath("//button[contains(.,'No')]"));
+			if(No_button.isDisplayed())
+				No_button.click();
+			else if(x_button.isDisplayed())
+				x_button.click();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		Thread.sleep(1000);
 		File f = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		File d = new File(System.getProperty("user.dir")+"/screenShots/"+"Vote_"+System.currentTimeMillis()+".png");
 		FileUtils.copyFile(f, d);
-		
+
 		driver.close();
 	}
 }
