@@ -1,13 +1,8 @@
 package com.vote.lohi;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,7 +14,7 @@ public class VoteTest {
 
 	public static WebDriver driver;
 	@Test
-	public void voteTest() throws IOException, InterruptedException
+	public void voteTest()
 	{
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
@@ -29,8 +24,8 @@ public class VoteTest {
 
 		driver.get("http://mycutebaby.in/contest/participant/?n=5edd313ba9a6d&utm_source=wsapp_share_status&utm_campaign=June_2020&utm_medium=shared&utm_term=wsapp_shared_5edd313ba9a6d&utm_content=participant");
 		try {
-//			driver.findElement(By.id("v")).sendKeys("Sree");
-			driver.findElement(By.id("vote_btn")).click();
+			WebElement v_button = driver.findElement(By.id("vote_btn"));
+			v_button.click();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
