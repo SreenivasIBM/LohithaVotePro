@@ -27,44 +27,14 @@ public class VoteTest {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-		driver.get("http://mycutebaby.in/contest/participant/?n=5edd313ba9a6d&utm_source=wsapp_share_status&utm_campaign="
-				+ "June_2020&utm_medium=shared&utm_term=wsapp_shared_5edd313ba9a6d&utm_content=participant");
-		
-		driver.findElement(By.id("vote_btn")).click();
-		
-//		try {
-//			WebElement fb_popup = driver.findElement(By.id("fb-close"));
-//			if(fb_popup.isDisplayed())
-//				fb_popup.click();
-//			
-//			WebElement x_button = driver.findElement(By.xpath("//button[@class='close' and contains(.,'×')]"));
-//			WebElement No_button = driver.findElement(By.xpath("//button[contains(.,'No')]"));
-//			if(No_button.isDisplayed())
-//				No_button.click();
-//			else if(x_button.isDisplayed())
-//				x_button.click();
-//		}
-//		catch(Exception e)
-//		{
-//			WebElement x_button = driver.findElement(By.xpath("//button[@class='close' and contains(.,'×')]"));
-//			WebElement No_button = driver.findElement(By.xpath("//button[contains(.,'No')]"));
-//			if(No_button.isDisplayed())
-//				No_button.click();
-//			else if(x_button.isDisplayed())
-//				x_button.click();
-//			
-//			WebElement fb_popup = driver.findElement(By.id("fb-close"));
-//			if(fb_popup.isDisplayed())
-//				fb_popup.click();
-//		}
-		
-		
-		
-		Thread.sleep(1000);
-		File f = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File d = new File(System.getProperty("user.dir")+"/screenShots/"+"Vote.png");
-		FileUtils.copyFile(f, d);
-
+		driver.get("http://mycutebaby.in/contest/participant/?n=5edd313ba9a6d&utm_source=wsapp_share_status&utm_campaign=June_2020&utm_medium=shared&utm_term=wsapp_shared_5edd313ba9a6d&utm_content=participant");
+		try {
+//			driver.findElement(By.id("v")).sendKeys("Sree");
+			driver.findElement(By.id("vote_btn")).click();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		System.out.println(driver.findElement(By.id("vote_msg")).getText());
 		driver.close();
 	}
 }
