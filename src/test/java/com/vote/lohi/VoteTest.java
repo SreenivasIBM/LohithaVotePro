@@ -38,9 +38,9 @@ public class VoteTest {
 		if(fb_popup.isDisplayed())
 			fb_popup.click();
 //		WebElement x_button = driver.findElement(By.xpath("//button[@class='close' and contains(.,'×')]"));
-		WebElement No_button = driver.findElement(By.xpath("//button[contains(.,'No')]"));
-		if(No_button.isDisplayed())
-			No_button.click();
+//		WebElement No_button = driver.findElement(By.xpath("//button[contains(.,'No')]"));
+//		if(No_button.isDisplayed())
+//			No_button.click();
 		
 		Thread.sleep(1000);
 		File f = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
