@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-07-04T22:07:54 IST" name="com.vote.lohi.VoteTest" finished-at="2020-07-04T22:08:14 IST" duration-ms="20215">
+    <groups>
+    </groups>
+    <test started-at="2020-07-04T22:07:54 IST" name="Command line test" finished-at="2020-07-04T22:08:14 IST" duration-ms="20215">
+      <class name="com.vote.lohi.VoteTest">
+        <test-method signature="voteTest()[pri:0, instance:com.vote.lohi.VoteTest@c33b74f]" started-at="2020-07-04T22:07:54 IST" name="voteTest" finished-at="2020-07-04T22:08:14 IST" duration-ms="20170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- voteTest -->
+      </class> <!-- com.vote.lohi.VoteTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.vote.lohi.VoteTest -->
+</testng-results>
