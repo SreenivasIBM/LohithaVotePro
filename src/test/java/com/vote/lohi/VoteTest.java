@@ -24,6 +24,7 @@ public class VoteTest {
 
 		driver.get("http://mycutebaby.in/contest/participant/?n=5edd313ba9a6d&utm_source=wsapp_share_status&utm_campaign=June_2020&utm_medium=shared&utm_term=wsapp_shared_5edd313ba9a6d&utm_content=participant");
 		try {
+			Thread.sleep(10000);
 			WebElement v_button = driver.findElement(By.id("vote_btn"));
 			v_button.click();
 		} catch (Exception e) {
