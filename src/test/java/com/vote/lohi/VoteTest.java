@@ -30,7 +30,7 @@ public class VoteTest {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		System.out.println(driver.findElement(By.id("vote_msg")).getText());
+		System.out.println(driver.findElement(By.xpath("//*[@id='vote_msg' and contains(.,'Thank You For Vote!')]")).getText());
 		driver.close();
 	}
 }
