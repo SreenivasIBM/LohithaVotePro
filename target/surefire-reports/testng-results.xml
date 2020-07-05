@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-05T00:28:49 IST" name="com.vote.lohi.VoteTest" finished-at="2020-07-05T00:29:27 IST" duration-ms="38163">
+  <suite started-at="2020-07-05T09:59:27 IST" name="com.vote.lohi.VoteTest" finished-at="2020-07-05T09:59:45 IST" duration-ms="17994">
     <groups>
     </groups>
-    <test started-at="2020-07-05T00:28:49 IST" name="Command line test" finished-at="2020-07-05T00:29:27 IST" duration-ms="38163">
+    <test started-at="2020-07-05T09:59:27 IST" name="Command line test" finished-at="2020-07-05T09:59:45 IST" duration-ms="17994">
       <class name="com.vote.lohi.VoteTest">
-        <test-method signature="voteTest()[pri:0, instance:com.vote.lohi.VoteTest@c33b74f]" started-at="2020-07-05T00:28:49 IST" name="voteTest" finished-at="2020-07-05T00:29:27 IST" duration-ms="38100" status="PASS">
+        <test-method signature="voteTest()[pri:0, instance:com.vote.lohi.VoteTest@c33b74f]" started-at="2020-07-05T09:59:27 IST" name="voteTest" finished-at="2020-07-05T09:59:45 IST" duration-ms="17925" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- voteTest -->

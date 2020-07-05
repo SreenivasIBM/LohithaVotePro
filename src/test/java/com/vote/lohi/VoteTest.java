@@ -22,9 +22,9 @@ public class VoteTest {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-		driver.get("http://mycutebaby.in/contest/participant/?n=5edd313ba9a6d&utm_source=wsapp_share_status&utm_campaign=June_2020&utm_medium=shared&utm_term=wsapp_shared_5edd313ba9a6d&utm_content=participant");
+		driver.get("https://mycutebaby.in/contest/participant/?n=5edd313ba9a6d");
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			WebElement v_button = driver.findElement(By.id("vote_btn"));
 			v_button.click();
 		} catch (Exception e) {
